@@ -1,0 +1,50 @@
+[
+    {
+        "question" : "Are you lame?",
+        "answer" : false
+    },
+    {
+        "question" : "Do you like team sports?",
+        "answer" : false
+    },
+    {
+        "question" : "Would you voluntarily run hills and do intervals?",
+        "answer" : false
+    },
+    {
+        "question" : "Do you have an incredibly mean coach",
+        "answer" : false
+    },
+    {
+        "question" : "Are you strong in the arms?",
+        "answer" : false
+    },
+    {
+        "question" : "Are you strong in the legs?",
+        "answer" : false
+    },
+    {
+        "question" : "Do you have zero coordination?",
+        "answer" : false
+    },
+    {
+        "question" : "Do you like to sprint short distances?",
+        "answer" : false
+    },
+    {
+        "question" : "Do you like to slide?",
+        "answer" : false
+    },
+    {
+        "question" : "Do you want to join a cult?",
+        "answer" : false
+    },
+    {
+        "question" : "Do you like to lose game?",
+        "answer" : false
+    },
+    {
+        "question" : "Do you like to run?",
+        "answer" : false
+    }
+]
