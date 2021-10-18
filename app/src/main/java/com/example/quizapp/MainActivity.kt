@@ -3,6 +3,8 @@ package com.example.quizapp
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.widget.Button
+import android.widget.TextView
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 import org.json.JSONArray
@@ -12,10 +14,16 @@ class MainActivity : AppCompatActivity() {
 
     val TAG = "MainActivity"
     lateinit var quiz: Quiz
+    lateinit var trueValueButton: Button
+    lateinit var falseValueButton: Button
+    lateinit var questionAsked: TextView
+    var answer: Boolean = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        wireWidgits()
 
         // reading the json from the raw folder
 
@@ -23,7 +31,7 @@ class MainActivity : AppCompatActivity() {
         // R.raw.questions --> R is the Resources class, raw is the folder,
         // questions is the file
         val inputStream = resources.openRawResource(R.raw.questions)
-        // step 2: use a buffered reader on the inputstreaam to read
+        // step 2: use a buffered reader on the inputstream to read
         // the text into a string
         val jsonText = inputStream.bufferedReader().use{
             // the last line of the use function is returned
@@ -46,6 +54,13 @@ class MainActivity : AppCompatActivity() {
         // do any initial setup of the layout to show the first questions.json
 
         quiz = Quiz(questions)
+        trueValueButton.setOnClickListener {
+            answer = true
+            quiz.checkAnswer(answer)
+        }
+        falseValueButton.setOnClickListener {
+            answer = false
+        }
 /*
         //any quiz related actions -- scorekeeping, checking if
         // answers are right or wrong, keeping track of which questions
@@ -59,10 +74,28 @@ class MainActivity : AppCompatActivity() {
             // if the answer was right or wrong
             // could use answer1Button.text to see what the answer was selected
 
+            // update the score text view based on the current score
             //
-        }
-        
- */
+            // ask the quiz if there are more questions, and if there are
+            // set the question text and button text to the new question
+            // and answer choices
+            //
+            // if there aren't any more questions, then hide a bunch of UI
+            // and give the final score
+
+         private fin checkAnswerAndUpdateUI
+         val response = if(quiz.checkAnswer(answer)){
+            resources.getString(R.string.correct_response)
+         } else {
+            resources.getString(R.string.incorrect_response)
+         }
+        */
+    }
+
+    private fun wireWidgits() {
+        trueValueButton = findViewById(R.id.button_main_trueValButton)
+        falseValueButton = findViewById(R.id.button_main_falseValButton)
+        questionAsked = findViewById(R.id.textView_main_questionAsked)
     }
 }
 

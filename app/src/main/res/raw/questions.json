@@ -1,50 +1,149 @@
 [
     {
         "question" : "Are you lame?",
-        "answer" : false
+        "trueValue" :100,
+        "falseValue" : -50,
+        "button1": "Yes",
+        "button2": "No"
     },
     {
         "question" : "Do you like team sports?",
-        "answer" : false
+        "trueValue" : 60,
+        "falseValue" : 30,
+        "button1": "It’s me and my bros",
+        "button2": "It’s me, myself, and I"
     },
     {
         "question" : "Would you voluntarily run hills and do intervals?",
-        "answer" : false
+        "trueValue" : 50,
+        "falseValue" : 0,
+        "button1": "YES SIR",
+        "button2": "No possible way"
     },
     {
-        "question" : "Do you have an incredibly mean coach",
-        "answer" : false
+        "question" : "Do you have an nice coach",
+        "trueValue" : 60,
+        "falseValue" : 10,
+        "button1": "Yes",
+        "button2": "No"
     },
     {
-        "question" : "Are you strong in the arms?",
-        "answer" : false
+        "question" : "Are you mostly strong in the arms?",
+        "trueValue" : 120,
+        "falseValue" : 50,
+        "button1": "Yes, I'm buff",
+        "button2": "No, I have twig arms"
     },
     {
-        "question" : "Are you strong in the legs?",
-        "answer" : false
+        "question" : "Are you mostly strong in the legs?",
+        "trueValue" : 120,
+        "falseValue" : 50,
+        "button1": "Yes, I'm buff",
+        "button2": "No, I have twig legs"
     },
     {
         "question" : "Do you have zero coordination?",
-        "answer" : false
+        "trueValue" : -30,
+        "falseValue" : 30,
+        "button1": "Yes, I'm very clumsy",
+        "button2": "No, I have the best balance"
     },
     {
         "question" : "Do you like to sprint short distances?",
-        "answer" : false
+        "trueValue" : 100,
+        "falseValue" : 20,
+        "button1": "Yes, I'm speedy",
+        "button2": "No, I like to take it slow"
     },
     {
         "question" : "Do you like to slide?",
-        "answer" : false
+        "trueValue" : 80,
+        "falseValue" : 10,
+        "button1": "Yes",
+        "button2": "No"
     },
     {
         "question" : "Do you want to join a cult?",
-        "answer" : false
+        "trueValue" : 150,
+        "falseValue" : -10,
+        "button1": "ABSOLUTELY",
+        "button2": "No, no, no"
     },
     {
-        "question" : "Do you like to lose game?",
-        "answer" : false
+        "question" : "Do you like to lose games?",
+        "trueValue" : -180,
+        "falseValue" : 90,
+        "button1": "Yeah, I don't care that much",
+        "button2": "No, I will fight to the end"
     },
     {
         "question" : "Do you like to run?",
-        "answer" : false
+        "trueValue" : 110,
+        "falseValue" : 20,
+        "button1": "Yes",
+        "button2": "No"
+    },
+    {
+        "question" : "Are you good at changing directions quickly?",
+        "trueValue" : 40,
+        "falseValue" : 0,
+        "button1": "Yes",
+        "button2": "No"
+    },
+    {
+        "question" : "Are you a fish?",
+        "trueValue" : 600,
+        "falseValue" : 30,
+        "button1": "Yes, flop flop",
+        "button2": "No"
+    },
+    {
+        "question" : "Do you like tight clothing?",
+        "trueValue" : 70,
+        "falseValue" : 40,
+        "button1": "Yes",
+        "button2": "No"
+    },
+    {
+        "question" : "Do you prefer to be on land or in water while exercising?",
+        "trueValue" : 500, //water
+        "falseValue" : 20,  //land
+        "button1": "Yes",
+        "button2": "No"
+    },
+    {
+        "question" : "Would you wear a cap while you workout?",
+        "trueValue" : 20,
+        "falseValue" : 0,
+        "button1": "Yes",
+        "button2": "No"
+    },
+    {
+        "question" : "Do you have hand eye coordination?",
+        "trueValue" : 80,
+        "falseValue" : 40,
+        "button1": "Yes",
+        "button2": "No"
+    },
+    {
+        "question" : "Do you have feet eye coordination?",
+        "trueValue" : 80,
+        "falseValue" : 40,
+        "button1": "Yes",
+        "button2": "No"
+    },
+    {
+        "question" : "Do you like tackling people?",
+        "trueValue" : 30,
+        "falseValue" : 10,
+        "button1": "Yes, I put them on the ground",
+        "button2": "No, I am very nice"
+    },
+    {
+        "question" : "You don't mind getting scrapes and bruises, right?",
+        "trueValue" : 20,
+        "falseValue" : 80,
+        "button1": "Anything for the game",
+        "button2": "No contact for me"
     }
 ]

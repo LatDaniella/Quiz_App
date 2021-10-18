@@ -1,0 +1,149 @@
+[
+    {
+        "question" : "Eres perezoso?",
+        "trueValue" :100,
+        "falseValue" : -50,
+        "button1": "Sí",
+        "button2": "No"
+    },
+    {
+        "question" : "Te gusta el equipo deportes?",
+        "trueValue" : 60,
+        "falseValue" : 30,
+        "button1": "Somos yo y mis hermanos",
+        "button2": "Soy yo, yo y yo"
+    },
+    {
+        "question" : "¿Correrías voluntariamente colinas y harías intervalos?",
+        "trueValue" : 50,
+        "falseValue" : 0,
+        "button1": "SÍ SEÑOR",
+        "button2": "Ninguna manera posible"
+    },
+    {
+        "question" : "¿Tienes buen entrenador?",
+        "trueValue" : 60,
+        "falseValue" : 10,
+        "button1": "Sí",
+        "button2": "No"
+    },
+    {
+        "question" : "¿Tienes brazos fuertes?",
+        "trueValue" : 120,
+        "falseValue" : 50,
+        "button1": "Sí, soy fuerte",
+        "button2": "No, tengo brazos pequeñas"
+    },
+    {
+        "question" : "¿Tienes piernas fuertes?",
+        "trueValue" : 120,
+        "falseValue" : 50,
+        "button1": "Sí, soy fuerte",
+        "button2": "No, tengo piernas pequeñas"
+    },
+    {
+        "question" : "¿Tienes cero coordinación?",
+        "trueValue" : -30,
+        "falseValue" : 30,
+        "button1": "Sí, soy muy torpe",
+        "button2": "No, tengo el mejor equilibrio"
+    },
+    {
+        "question" : "¿Te gusta correr distancias cortas?",
+        "trueValue" : 100,
+        "falseValue" : 20,
+        "button1": "Sí, soy rápido",
+        "button2": "No, me gusta tomarlo con calma"
+    },
+    {
+        "question" : "¿Te gusta deslizarte?",
+        "trueValue" : 80,
+        "falseValue" : 10,
+        "button1": "Sí",
+        "button2": "No"
+    },
+    {
+        "question" : "¿Quieres unirte a una secta?",
+        "trueValue" : 150,
+        "falseValue" : -10,
+        "button1": "ABSOLUTAMENTE",
+        "button2": "No, no, no"
+    },
+    {
+        "question" : "¿Te gusta perder partidos?",
+        "trueValue" : -180,
+        "falseValue" : 90,
+        "button1": "Sí, no me importa tanto",
+        "button2": "No, lucharé hasta el final"
+    },
+    {
+        "question" : "¿Te gusta correr?",
+        "trueValue" : 110,
+        "falseValue" : 20,
+        "button1": "Sí",
+        "button2": "No"
+    },
+    {
+        "question" : "¿Eres bueno para cambiar de dirección rápidamente?",
+        "trueValue" : 40,
+        "falseValue" : 0,
+        "button1": "Sí",
+        "button2": "No"
+    },
+    {
+        "question" : "¿Eres un pez?",
+        "trueValue" : 600,
+        "falseValue" : 30,
+        "button1": "Sí, flop flop",
+        "button2": "No"
+    },
+    {
+        "question" : "¿Te gusta la ropa apretada?",
+        "trueValue" : 70,
+        "falseValue" : 40,
+        "button1": "Sí",
+        "button2": "No"
+    },
+    {
+        "question" : "¿Prefieres estar en tierra o en el agua mientras haces ejercicio?",
+        "trueValue" : 500, //water
+        "falseValue" : 20, //land
+        "button1": "Sí",
+        "button2": "No"
+    },
+    {
+        "question" : "¿Llevarías una gorra mientras entrenas?",
+        "trueValue" : 20,
+        "falseValue" : 0,
+        "button1": "Sí",
+        "button2": "No"
+    },
+    {
+        "question" : "¿Tienes coordinación mano-ojo?",
+        "trueValue" : 80,
+        "falseValue" : 40,
+        "button1": "Sí",
+        "button2": "No"
+    },
+    {
+        "question" : "¿Tienes coordinación pies-ojo?",
+        "trueValue" : 80,
+        "falseValue" : 40,
+        "button1": "Sí",
+        "button2": "No"
+    },
+    {
+        "question" : "¿Te gusta placar la gente?",
+        "trueValue" : 30,
+        "falseValue" : 10,
+        "button1": "Sí, los puse en el suelo",
+        "button2": "No, soy muy simpático"
+    },
+    {
+        "question" : "¿No te importa tener rasguños y moretones, ¿verdad?",
+        "trueValue" : 20,
+        "falseValue" : 80,
+        "button1": "Cualquier cosa para el juego",
+        "button2": "No hay contacto para mí"
+    }
+]
