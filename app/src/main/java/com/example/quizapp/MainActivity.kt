@@ -3,6 +3,7 @@ package com.example.quizapp
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.view.View
 import android.widget.Button
 import android.widget.TextView
 import com.google.gson.Gson
@@ -17,7 +18,7 @@ class MainActivity : AppCompatActivity() {
     lateinit var trueValueButton: Button
     lateinit var falseValueButton: Button
     lateinit var questionAsked: TextView
-    var answer: Boolean = false
+    private var answer = true
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -48,48 +49,42 @@ class MainActivity : AppCompatActivity() {
         // gson needs to know what kind of list you are converting
         val type = object : TypeToken<List<Question>>(){}.type
         val questions = gson.fromJson<List<Question>>(jsonText, type)
-        Log.d(TAG, "onCreate: \n${questions.toString()}")
+        Log.d(TAG, "onCreate: \n$questions")
 
         // create Quiz object using the list of questions you just read
         // do any initial setup of the layout to show the first questions.json
 
         quiz = Quiz(questions)
+        questionAsked.text = quiz.questions.elementAt(quiz.totalQuestionsAsked).question
+        buttonTextView()
         trueValueButton.setOnClickListener {
-            answer = true
-            quiz.checkAnswer(answer)
+            quiz.resultOfAnswer(true)
+            if(quiz.hasMoreQuestions()){
+                questionAsked.text = quiz.setUpNextQuestion()
+                buttonTextView()
+            } else {
+                trueValueButton.visibility = View.GONE
+                falseValueButton.visibility = View.GONE
+            }
         }
         falseValueButton.setOnClickListener {
-            answer = false
+            quiz.resultOfAnswer(false)
+            quiz.setUpNextQuestion()
+            if(quiz.hasMoreQuestions()){
+                questionAsked.text = quiz.setUpNextQuestion()
+                buttonTextView()
+            } else {
+                //trueValueButton.visibility = View.GONE
+                //falseValueButton.visibility = View.GONE
+            }
         }
-/*
-        //any quiz related actions -- scorekeeping, checking if
-        // answers are right or wrong, keeping track of which questions
-        // we are on, if there are more questions remaining are all duties
-        // of the quiz class
+    }
 
-        //MainActivity is in charge of the UI and passing information
-        // to and from the Quiz and class
-        answer1Button.setOnClickListener{
-            // tell the quiz was was clicked on and let the quiz determine
-            // if the answer was right or wrong
-            // could use answer1Button.text to see what the answer was selected
-
-            // update the score text view based on the current score
-            //
-            // ask the quiz if there are more questions, and if there are
-            // set the question text and button text to the new question
-            // and answer choices
-            //
-            // if there aren't any more questions, then hide a bunch of UI
-            // and give the final score
-
-         private fin checkAnswerAndUpdateUI
-         val response = if(quiz.checkAnswer(answer)){
-            resources.getString(R.string.correct_response)
-         } else {
-            resources.getString(R.string.incorrect_response)
-         }
-        */
+    private fun buttonTextView() {
+        trueValueButton.text = quiz.questions.elementAt(quiz.totalQuestionsAsked).button1
+        falseValueButton.text = quiz.questions.elementAt(quiz.totalQuestionsAsked).button2
+        trueValueButton.visibility = View.VISIBLE
+        falseValueButton.visibility = View.VISIBLE
     }
 
     private fun wireWidgits() {
