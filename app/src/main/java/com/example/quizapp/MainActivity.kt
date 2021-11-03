@@ -18,6 +18,7 @@ class MainActivity : AppCompatActivity() {
     lateinit var trueValueButton: Button
     lateinit var falseValueButton: Button
     lateinit var questionAsked: TextView
+    lateinit var totalPoints:TextView
     private var answer = true
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -65,24 +66,31 @@ class MainActivity : AppCompatActivity() {
             } else {
                 trueValueButton.visibility = View.GONE
                 falseValueButton.visibility = View.GONE
+                questionAsked.text = quiz.getResult()
             }
         }
+
         falseValueButton.setOnClickListener {
             quiz.resultOfAnswer(false)
-            quiz.setUpNextQuestion()
             if(quiz.hasMoreQuestions()){
                 questionAsked.text = quiz.setUpNextQuestion()
                 buttonTextView()
             } else {
-                //trueValueButton.visibility = View.GONE
-                //falseValueButton.visibility = View.GONE
+                trueValueButton.visibility = View.GONE
+                falseValueButton.visibility = View.GONE
+                questionAsked.text = quiz.getResult()
             }
         }
+
+
     }
 
     private fun buttonTextView() {
+        //questionAsked.text = quiz.questions.elementAt(quiz.totalQuestionsAsked).question
         trueValueButton.text = quiz.questions.elementAt(quiz.totalQuestionsAsked).button1
         falseValueButton.text = quiz.questions.elementAt(quiz.totalQuestionsAsked).button2
+        totalPoints.text = "Points: " + quiz.totalPoints.toString()
+        totalPoints.visibility = View.VISIBLE
         trueValueButton.visibility = View.VISIBLE
         falseValueButton.visibility = View.VISIBLE
     }
@@ -91,6 +99,7 @@ class MainActivity : AppCompatActivity() {
         trueValueButton = findViewById(R.id.button_main_trueValButton)
         falseValueButton = findViewById(R.id.button_main_falseValButton)
         questionAsked = findViewById(R.id.textView_main_questionAsked)
+        totalPoints = findViewById(R.id.textView_main_totalPoints)
     }
 }
 

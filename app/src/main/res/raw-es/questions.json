@@ -1,8 +1,8 @@
 [
     {
         "question" : "Eres perezoso?",
-        "trueValue" :100,
-        "falseValue" : -50,
+        "trueValue" :-50,
+        "falseValue" : 100,
         "button1": "Sí",
         "button2": "No"
     },

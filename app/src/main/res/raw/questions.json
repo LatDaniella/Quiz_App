@@ -1,8 +1,8 @@
 [
     {
         "question" : "Are you lame?",
-        "trueValue" :100,
-        "falseValue" : -50,
+        "trueValue" :-50,
+        "falseValue" : 100,
         "button1": "Yes",
         "button2": "No"
     },

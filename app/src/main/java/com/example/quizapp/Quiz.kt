@@ -6,7 +6,7 @@ class Quiz(var questions: List<Question>) {
     var totalPoints = 0
 
     fun hasMoreQuestions(): Boolean {
-        return numOfQuestions < totalQuestionsAsked
+        return numOfQuestions > totalQuestionsAsked
     }
 
     fun setUpNextQuestion(): String {
@@ -29,16 +29,16 @@ class Quiz(var questions: List<Question>) {
 
     fun getResult(): String {
         return when(totalPoints) {
-            in Int.MIN_VALUE..719 -> "football"
-            in 720..879 -> "golf"
-            in 880..899 -> "tennis"
-            in 900..979 -> "volleyball"
-            in 980..999 -> "basketball"
-            in 1000..1019 -> "baseball or softball"
-            in 1020..1089 -> "cross country"
-            in 1090..1259 -> "soccer"
-            in 1260..1859 -> "track"
-            in 1860..Int.MAX_VALUE -> "swimming"
+            in Int.MIN_VALUE..719 -> "You should join football"
+            in 720..879 -> "You should join golf"
+            in 880..899 -> "You should join tennis"
+            in 900..979 -> "You should join volleyball"
+            in 980..999 -> "You should join basketball"
+            in 1000..1019 -> "You should join baseball or softball"
+            in 1020..1089 -> "You should join cross country"
+            in 1090..1259 -> "You should join soccer"
+            in 1260..1859 -> "You should join track"
+            in 1860..Int.MAX_VALUE -> "You should join swimming"
             else -> {
                 ""
             }
