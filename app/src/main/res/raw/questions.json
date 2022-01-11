@@ -106,10 +106,10 @@
     },
     {
         "question" : "Do you prefer to be on land or in water while exercising?",
-        "trueValue" : 500, //water
-        "falseValue" : 20,  //land
-        "button1": "Yes",
-        "button2": "No"
+        "trueValue" : 500,
+        "falseValue" : 20,
+        "button1": "Water",
+        "button2": "Land"
     },
     {
         "question" : "Would you wear a cap while you workout?",

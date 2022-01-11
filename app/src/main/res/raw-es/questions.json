@@ -106,10 +106,10 @@
     },
     {
         "question" : "¿Prefieres estar en tierra o en el agua mientras haces ejercicio?",
-        "trueValue" : 500, //water
-        "falseValue" : 20, //land
-        "button1": "Sí",
-        "button2": "No"
+        "trueValue" : 500,
+        "falseValue" : 20,
+        "button1": "Agua",
+        "button2": "Tierra"
     },
     {
         "question" : "¿Llevarías una gorra mientras entrenas?",

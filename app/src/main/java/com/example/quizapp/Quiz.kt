@@ -35,9 +35,9 @@ class Quiz(var questions: List<Question>) {
             in 900..979 -> "You should join volleyball"
             in 980..999 -> "You should join basketball"
             in 1000..1019 -> "You should join baseball or softball"
-            in 1020..1089 -> "You should join cross country"
-            in 1090..1259 -> "You should join soccer"
-            in 1260..1859 -> "You should join track"
+            in 1020..1299 -> "You should join cross country"
+            in 1300..1599 -> "You should join soccer"
+            in 1600..1859 -> "You should join track"
             in 1860..Int.MAX_VALUE -> "You should join swimming"
             else -> {
                 ""
